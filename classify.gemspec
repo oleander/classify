@@ -8,9 +8,9 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Linus Oleander"]
   s.email       = ["linus@oleander.nu"]
-  s.homepage    = ""
-  s.summary     = %q{Converts a string into a constant}
-  s.description = %q{Converts a string into a constant, like Rails classify method}
+  s.homepage    = "https://github.com/oleander/classify"
+  s.summary     = %q{Converts strings into constants using Ruby}
+  s.description = %q{Converts strings into constants using Ruby. Something simular to Rails classify method.}
 
   s.rubyforge_project = "classify"
 
