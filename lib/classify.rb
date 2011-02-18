@@ -1,7 +1,7 @@
 class Classify
   def self.it!(string)
-    raise ArgumentError, "Wrong argument #{string.inspect}" if not string.class == String or string.match(/(^\_)|(\_$)|([^a-z0-9\_])/i)
-    Classify.new.camelize(string)
+    cf = Classify.new
+    cf.try_converting(cf.camelize(string))
   end
   
   def try_converting(string)
@@ -13,6 +13,7 @@ class Classify
   end
 
   def camelize(string)
-    self.try_converting(string.gsub(/^(.{1})|\_.{1}/) { |s| s.gsub(/[^a-z0-9]+/i, '').capitalize })
+    raise ArgumentError, "Wrong argument #{string.inspect}" if not string.class == String or string.match(/(^\_)|(\_$)|([^a-z0-9\_])/i)
+    string.gsub(/^(.{1})|\_.{1}/) { |s| s.gsub(/[^a-z0-9]+/i, '').capitalize }
   end
 end
