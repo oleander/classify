@@ -1,3 +1,4 @@
+# encoding: UTF-8
 require 'spec_helper'
 
 module Therandomstring; end
@@ -13,7 +14,7 @@ describe Classify do
   end
   
   it "should raise an error if the param contains non valid data" do
-    ["my_stri::ng", "_value_some", "my_string ", "my_ö_ss", nil, Object, "", 1, "1_string"].each do |string|
+    ["my::string", "_value_string", "my_string ", "string_ö_string", nil, Object, "", 1, "1_string", "string_", "_string_"].each do |string|
       lambda {
         Classify.it!(string)
       }.should raise_error(ArgumentError)

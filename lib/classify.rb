@@ -1,6 +1,6 @@
 class Classify
   def self.it!(string)
-    raise ArgumentError, "Wrong argument #{string.inspect}" unless string.class == String
+    raise ArgumentError, "Wrong argument #{string.inspect}" if not string.class == String or string.match(/(^\_)|(\_$)|([^a-z0-9\_])/i)
     Classify.new.camelize(string)
   end
   
