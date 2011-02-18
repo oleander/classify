@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.email       = ["linus@oleander.nu"]
   s.homepage    = "https://github.com/oleander/classify"
   s.summary     = %q{Converts strings into constants using Ruby}
-  s.description = %q{Converts strings into constants using Ruby. Something simular to Rails classify method.}
+  s.description = %q{Converts strings into constants using Ruby. Something simular to Rails' classify method.}
 
   s.rubyforge_project = "classify"
 

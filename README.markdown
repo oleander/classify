@@ -2,7 +2,7 @@
 
 Converts strings into constants using Ruby.
 
-Something similar to Rails [classify](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-classify) method.
+Something similar to Rails' [classify](http://api.rubyonrails.org/classes/ActiveSupport/Inflector.html#method-i-classify) method.
 
 ## How do use
     
